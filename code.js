@@ -43,7 +43,7 @@ buttonReset.onclick = function() {
          tensReset.innerHTML = tens;
      }
      
-     if (tens > 99){
+     if (tens > 59){
          seconds++;
          secondsReset.innerHTML = "0" + seconds;
          tens = 0;
@@ -52,7 +52,7 @@ buttonReset.onclick = function() {
      if (seconds > 9){
          secondsReset.innerHTML = seconds;
      }
-     if (seconds > 60){
+     if (seconds > 50){
          mins++;
          minsReset.innerHTML = "0" + mins;
          seconds = 0;
