@@ -1,6 +1,6 @@
 body{
 
-    background-color: #e5ffff;
+    background-color: #b2dfdb;
     height: 100vh;
     width: 100vw;
     margin: 0px;
@@ -15,7 +15,7 @@ body{
 .header > p{
     margin: 0;
     font-size: 50px;
-    padding: 10px 15px;
+    padding: 10px 15px 0px;
     color: #e5ffff;
     float: right;
 }
@@ -23,26 +23,25 @@ body{
     height: 55px;
     margin: 10px;
     float: left;
-}
 
-.box{
-    border: 10px solid #82ada9;
-    margin: 20vh 22vw;
-    padding: 30px 0px;
-    background-color: #b2dfdb;
 }
 .content{
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    width: 100vw;
     font-size: 40px;
+    background-color: #82ada9;
 }
 
 .content > img{
-    width: 50px;
+    height: 75px;
+    margin: auto 20px 20px auto;
 }
 .content > p{
     padding: 0px;
-    margin: 3vh auto;
-    font-size: 50px;
+    margin: auto auto 0 0;
+    font-size: 100px;
     
 }
 .buttons{
@@ -53,11 +52,11 @@ body{
 }
 
 .buttons > button{
-    height: 50px;
-    width: 100px;
-    margin: auto 1vw;
-    font-size: 20px;
-    background-color: #82ada9;
+    height: 75px;
+    width: 150px;
+    margin: 5vh 3vw ;
+    font-size: 40px;
+    background-color: #b2dfdb;
     border: 3px solid #e5ffff;
     border-radius: 5px;
     font-family: 'Lobster', cursive;
@@ -67,15 +66,14 @@ body{
     border-color: #82ada9;
 }
 
-@media all and (max-width: 600px){
-    .content{
-        font-size: 30px;
+@media all and (max-width: 700px){
+    .buttons{
+        margin-top: 20px;
+    }
+    .buttons > button{
+        width: 200px;
+        margin: 1vh 15vw;
     }
 }
 
-@media all and (max-width: 700px){
-    .buttons > button{
-        margin: 2px 8vw;
-    }
-}
 
